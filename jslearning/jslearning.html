@@ -7,21 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAVE FUN</title>
     <link rel="stylesheet" href="./jslearning.css">
+    <!-- 引入jQuery -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $('#left li').mouseover(function () {
+                var index = $(this).index();
 
+            })
+        })
+    </script>
 </head>
 
 <body>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <script>
-        $('p').css('color', 'red');
-    </script>
-
+    <div class="wrapper">
+        <ul id="left">
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+            <li>A</li>
+        </ul>
+    </div>
 </body>
 
 </html>
